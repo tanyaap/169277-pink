@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Апалькова](https://up.htmlacademy.ru/adaptive/15/user/169277).
-* Наставник: `Неизвестно`.
+* Наставник: [Светлана Корякина](https://htmlacademy.ru/profile/id477401).
 
 ---
 
