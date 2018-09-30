@@ -6,7 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" title="Логотип">Pink</a>
+      <a class="page-header__logo" href="#" title="PINK">
+        <img class="page-header__logo-pic" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
+      </a>
         <nav class="main-menu">
           <button class="main-menu__close-button">Закрыть</button>
           <ul class="main-menu__list site-list">
@@ -26,29 +28,29 @@
         </nav>
     </header>
 
-    <main class="main-menu">
-      <h1 class="main-menu__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="main-menu__description">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
+    <main class="main-content">
+      <h1 class="main-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="main-content__description">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
 
       <section class="form">
         <form class="form__form-block" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru">
           <fieldset class="form__name-block">
             <label for="last-name-field">Фамилия:</label>
-            <input type="text" name="last-name" id="last-name-field" value="Укажите фамилию*" required>
+            <input type="text" name="last-name" id="last-name-field" placeholder="Укажите фамилию*" required>
             <label for="name-field">Имя:</label>
-            <input type="text" name="name" id="name-field" value="Введите ваше имя*" required>
+            <input type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
             <label for="patronimic-field">Отчество:</label>
-            <input type="text" name="patronimic" id="patronimic-field" value="Ну и отчество тоже*" required>
+            <input type="text" name="patronimic" id="patronimic-field" placeholder="Ну и отчество тоже*" required>
           </fieldset>
 
           <fieldset class="form__achievements-block">
             <legend class="form__achievements-title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__achievements-list form-list-checkbox">
-                <li class="form-list-checkbox__item form-list-checkbox__item--checked">
+                <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="shark" id="shark-field" checked>
                   <label for="shark-field">Сделал селфи с акулой</label>
                 </li>
-                <li class="form-list-checkbox__item form-list-checkbox__item--checked">
+                <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="sunburnt" id="sunburnt-field" checked>
                   <label for="sunburnt-field">Обгорел на пляже</label>
                 </li>
@@ -60,11 +62,11 @@
                   <input type="checkbox" name="travel-field" value="souvenirs" id="souvenirs-field">
                   <label for="souvenirs-field">Накупил сувениров</label>
                 </li>
-                <li class="form-list-checkbox__item form-list-checkbox__item--checked">
+                <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="tower" id="tower-field" checked>
                   <label for="tower-field">Удержал башню</label>
                 </li>
-                <li class="form-list-checkbox__item form-list-checkbox__item--checked">
+                <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="hotel" id="hotel-field" checked>
                   <label for="hotel-field">Разгромил отель</label>
                 </li>
@@ -73,15 +75,15 @@
 
           <fieldset class="form__contacts-block">
             <label for="phone-field">Номер телефона</label>
-            <input type="tel" name="phone" id="phone-field" value="Номер, пожалуйста">
+            <input type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
             <label for="email-field">Адрес почты</label>
-            <input type="email" name="email" id="email-field" value="Введите почту*" required>
+            <input type="email" name="email" id="email-field" placeholder="Введите почту*" required>
           </fieldset>
 
           <fieldset class="form__app-block">
             <legend class="form__app-title">С каким приложением путешествовали?</legend>
               <ul class="form__app-list form-list-radio">
-                <li class="form-list-radio__item form-list-radio__item--checked">
+                <li class="form-list-radio__item">
                   <input type="radio" name="iOS" value="Pink для iOS" id="pink-iOS" checked>
                   <label for="pink-iOS">Pink для iOS</label>
                 </li>
@@ -98,7 +100,7 @@
 
           <fieldset class="form__description-block">
             <label for="description-field">Опишите свои эмоции</label>
-            <textarea name="description" id="description-field">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea name="description" id="description-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
           <button class="form__submit" type="submit">Отправить форму</button>
@@ -109,7 +111,9 @@
     </main>
 
     <footer class="page-footer">
-      <p class="page-footer__logo">Pink</p>
+      <a class="page-footer__logo" href="#" title="PINK">
+        <img class="page-footer__logo-pic" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
+      </a>
 
       <div class="page-footer__social social">
         <ul class="social__list">
