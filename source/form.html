@@ -3,116 +3,117 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="#" title="PINK">
-        <img class="page-header__logo-pic" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
+        <img class="page-header__logo-pic" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK">
       </a>
-        <nav class="main-menu">
-          <button class="main-menu__close-button">Закрыть</button>
-          <ul class="main-menu__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html" title="Главная">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html" title="Фотографии">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" title="Конкурс">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#" title="HTML Academy">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="main-menu">
+        <button class="main-menu__close-button">Закрыть</button>
+        <ul class="main-menu__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html" title="Главная">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html" title="Фотографии">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" title="Конкурс">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#" title="HTML Academy">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
     <main class="main-content">
-      <h1 class="main-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="main-content__description">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
+        <p class="main-content__description">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
 
       <section class="form">
         <form class="form__form-block" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__name-block">
-            <label for="last-name-field">Фамилия:</label>
-            <input type="text" name="last-name" id="last-name-field" placeholder="Укажите фамилию*" required>
-            <label for="name-field">Имя:</label>
-            <input type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
-            <label for="patronimic-field">Отчество:</label>
-            <input type="text" name="patronimic" id="patronimic-field" placeholder="Ну и отчество тоже*" required>
+          <fieldset class="form__fieldset form__fieldset--name-block">
+            <label for="last-name-field" class="form__field-title">Фамилия:</label>
+            <input class="form__input" type="text" name="last-name" id="last-name-field" placeholder="Укажите фамилию*" required>
+            <label for="name-field" class="form__field-title">Имя:</label>
+            <input class="form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
+            <label for="patronimic-field" class="form__field-title">Отчество:</label>
+            <input class="form__input" type="text" name="patronimic" id="patronimic-field" placeholder="Ну и отчество тоже*" required>
           </fieldset>
 
-          <fieldset class="form__achievements-block">
-            <legend class="form__achievements-title">Ваши безбашенные достижения в путешествии</legend>
+          <fieldset class="form__fieldset form__fieldset--achievements-block">
+            <legend class="form__achievements-title form__field-title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__achievements-list form-list-checkbox">
                 <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="shark" id="shark-field" checked>
-                  <label for="shark-field">Сделал селфи с акулой</label>
+                  <label for="shark-field" class="form__input form__input--box">Сделал селфи с акулой</label>
                 </li>
                 <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="sunburnt" id="sunburnt-field" checked>
-                  <label for="sunburnt-field">Обгорел на пляже</label>
+                  <label for="sunburnt-field" class="form__input form__input--box">Обгорел на пляже</label>
                 </li>
                 <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="norris" id="norris-field">
-                  <label for="norris-field">Видел Чака Норриса</label>
+                  <label for="norris-field" class="form__input form__input--box">Видел Чака Норриса</label>
                 </li>
                 <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="souvenirs" id="souvenirs-field">
-                  <label for="souvenirs-field">Накупил сувениров</label>
+                  <label for="souvenirs-field" class="form__input form__input--box">Накупил сувениров</label>
                 </li>
                 <li class="form-list-checkbox__item">
                   <input type="checkbox" name="travel-field" value="tower" id="tower-field" checked>
-                  <label for="tower-field">Удержал башню</label>
+                  <label for="tower-field" class="form__input form__input--box">Удержал башню</label>
                 </li>
                 <li class="form-list-checkbox__item">
-                  <input type="checkbox" name="travel-field" value="hotel" id="hotel-field" checked>
-                  <label for="hotel-field">Разгромил отель</label>
+                  <input type="checkbox" name="travel-field" value="hotel" id="hotel-field">
+                  <label for="hotel-field" class="form__input form__input--box">Разгромил отель</label>
                 </li>
               </ul>
           </fieldset>
 
-          <fieldset class="form__contacts-block">
-            <label for="phone-field">Номер телефона</label>
-            <input type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
-            <label for="email-field">Адрес почты</label>
-            <input type="email" name="email" id="email-field" placeholder="Введите почту*" required>
+          <fieldset class="form__fieldset form__fieldset--contacts-block">
+            <label for="phone-field" class="form__field-title">Номер телефона</label>
+            <input class="form__input" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+            <label for="email-field" class="form__field-title">Адрес почты</label>
+            <input class="form__input" type="email" name="email" id="email-field" placeholder="Введите почту*" required>
           </fieldset>
 
-          <fieldset class="form__app-block">
-            <legend class="form__app-title">С каким приложением путешествовали?</legend>
+          <fieldset class="form__fieldset form__fieldset--app-block">
+            <legend class="form__app-title form__field-title">С каким приложением путешествовали?</legend>
               <ul class="form__app-list form-list-radio">
                 <li class="form-list-radio__item">
                   <input type="radio" name="iOS" value="Pink для iOS" id="pink-iOS" checked>
-                  <label for="pink-iOS">Pink для iOS</label>
+                  <label for="pink-iOS" class="form__input form__input--box">Pink для iOS</label>
                 </li>
                 <li class="form-list-radio__item">
                   <input type="radio" name="Android" value="Pink для Android" id="pink-Android">
-                  <label for="pink-iOS">Pink для Android</label>
+                  <label for="pink-iOS" class="form__input form__input--box">Pink для Android</label>
                 </li>
                 <li class="form-list-radio__item">
                   <input type="radio" name="Win" value="Pink для Win" id="pink-Win">
-                  <label for="pink-iOS">Windows Phone</label>
+                  <label for="pink-iOS" class="form__input form__input--box">Windows Phone</label>
                 </li>
               </ul>
           </fieldset>
 
-          <fieldset class="form__description-block">
-            <label for="description-field">Опишите свои эмоции</label>
-            <textarea name="description" id="description-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="form__fieldset form__fieldset--description-block">
+            <label for="description-field" class="form__field-title form__field-title--textarea">Опишите свои эмоции</label>
+            <textarea class="form__input form__input--textarea" name="description" id="description-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
-          <button class="form__submit" type="submit">Отправить форму</button>
+          <button class="form__submit submit-button" type="submit">Отправить форму</button>
 
-          <p>* &#8211; обязательные поля</p>
+          <p class="form__reference"><span class="form__star">*</span> &#8211; обязательные поля</p>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="#" title="PINK">
-        <img class="page-footer__logo-pic" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
+        <img class="page-footer__logo-pic" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
       </a>
 
       <div class="page-footer__social social">
@@ -132,7 +133,7 @@
       <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
-              <img class="copyright__logo" src="http://placehold.it/30x55" width="30" height="55" alt="HTML Academy">
+              <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
             </a>
           </p>
       </div>
@@ -141,12 +142,14 @@
     <div class="popup">
       <h2 class="popup__title">Что-то пошло не так!</h2>
       <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup__button" type="button">OK</button>
+      <button class="popup__button submit-button" type="button">OK</button>
     </div>
     <div class="popup">
       <h2 class="popup__title">Ваша заявка отправлена</h2>
       <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас</p>
-      <button class="popup__button" type="button">Закрыть окно</button>
+      <div class="popup__button-block">
+        <button class="popup__button submit-button" type="button">Закрыть окно</button>
+      </div>
     </div>
   </body>
 </html>
