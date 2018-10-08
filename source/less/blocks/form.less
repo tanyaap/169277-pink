@@ -1,5 +1,21 @@
 .form__fieldset {
   border: none;
+
+  &--achievements-block {
+    background-color: @main-light;
+  }
+
+  &--contacts-block {
+    margin-top: 33px;
+  }
+
+  &--app-block {
+    background-color: @main-light;
+  }
+
+  &--description-block {
+    margin-top: 39px;
+  }
 }
 
 .form__field-title {
@@ -7,13 +23,17 @@
   margin-top: 20px;
   margin-bottom: 8px;
   padding-left: 21px;
-  .font-basics();
   font-size: 14px;
   font-weight: normal;
   line-height: 2.14;
   text-align: left;
   text-transform: uppercase;
   color: @main-pink;
+
+  &--textarea {
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .form__input {
@@ -21,7 +41,6 @@
   padding-top: 16px;
   padding-bottom: 12px;
   padding-left: 20px;
-  .font-basics();
   font-size: 18px;
   font-weight: normal;
   line-height: 1.67;
@@ -29,28 +48,24 @@
   color: @main-dark;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
-}
 
-.form__input:last-child {
-  margin-bottom: 44px;
-}
+  &:last-child {
+    margin-bottom: 44px;
+  }
 
-.form__input--box {
-  padding: 0;
-  padding-left: 33px;
-  border: none;
-}
+  &--box {
+    padding: 0;
+    padding-left: 33px;
+    border: none;
+  }
 
-.form__input--textarea {
-  min-height: 197px;
+  &--textarea {
+    min-height: 197px;
+  }
 }
 
 .form-list-checkbox__item {
   margin-bottom: 41px;
-}
-
-.form__fieldset--achievements-block {
-  background-color: @main-light;
 }
 
 .form__achievements-list {
@@ -63,14 +78,6 @@
   padding: 0;
   text-align: center;
   line-height: 1.29;
-}
-
-.form__fieldset--contacts-block {
-  margin-top: 33px;
-}
-
-.form__fieldset--app-block {
-  background-color: @main-light;
 }
 
 .form__app-list {
@@ -89,15 +96,6 @@
   line-height: 1.29;
 }
 
-.form__fieldset--description-block {
-  margin-top: 39px;
-}
-
-.form__field-title--textarea {
-  padding: 0;
-  text-align: center;
-}
-
 .form__submit {
   margin-bottom: 38px;
 }
@@ -105,14 +103,13 @@
 .form__reference {
   margin: 0;
   margin-bottom: 56px;
-  .font-basics();
   font-size: 14px;
   font-weight: normal;
   line-height: 2.14;
+  text-align: center;
   text-transform: uppercase;
   color: @main-dark;
 }
-
 
 .form__star {
   color: @main-pink;
