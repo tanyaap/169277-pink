@@ -1,3 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__form-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form__fieldset {
   border: none;
 
@@ -30,6 +42,10 @@
   text-transform: uppercase;
   color: @main-pink;
 
+  &:first-child {
+    margin-top: 0;
+  }
+
   &--textarea {
     padding: 0;
     text-align: center;
@@ -37,7 +53,6 @@
 }
 
 .form__input {
-  min-width: 276px;
   padding-top: 16px;
   padding-bottom: 12px;
   padding-left: 20px;
@@ -73,9 +88,9 @@
 }
 
 .form__achievements-title {
-  margin-top: 39px;
   margin-bottom: 40px;
   padding: 0;
+  padding-top: 39px;
   text-align: center;
   line-height: 1.29;
 }
@@ -89,9 +104,9 @@
 }
 
 .form__app-title {
-  margin-top: 39px;
   margin-bottom: 37px;
   padding: 0;
+  padding-top: 39px;
   text-align: center;
   line-height: 1.29;
 }
@@ -113,4 +128,87 @@
 
 .form__star {
   color: @main-pink;
+}
+
+.form_button-block {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form__input {
+    min-width: 521px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 54px;
+  }
+
+  .form__fieldset:not(.form__fieldset--name-block) {
+    border: 2px solid @grey;
+  }
+
+  .form__button-block {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__form-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form__input {
+    min-width: 336px;
+  }
+
+  .form__fieldset {
+    &--name-block {
+      max-width: 431px;
+      order: 1;
+    }
+
+    &--achievements-block {
+      display: flex;
+      max-width: 936px;
+      order: 4;
+      background-color: transparent;
+    }
+
+    &--contacts-block {
+      display: flex;
+      min-width: 936px;
+      order: 3;
+
+      .form__input {
+        order: 1;
+      }
+
+      .form__field-title {
+        display: inline-flex;
+        order: 2;
+      }
+    }
+
+    &--app-block {
+      max-width: 431px;
+      order: 2;
+    }
+
+    &--description-block {
+      display: flex;
+      justify-content: center;
+      min-width: 936px;
+      order: 5;
+    }
+  }
+
+  .form__button-block {
+    min-width: 936px;
+    order: 6;
+  }
 }

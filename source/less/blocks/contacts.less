@@ -1,20 +1,140 @@
-.contacts__link {
-  text-decoration: none;
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
-.contacts__action-type {
-  padding-bottom: 28px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: normal;
-  text-align: center;
-  color: @main-dark;
-}
-
-.contacts__action {
+.contacts__text {
+  margin: 0;
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
   text-align: center;
-  color: @main-pink;
+  color: @main-dark;
+
+  &:first-child {
+    padding-top: 44px;
+  }
+
+  &:nth-child(2) {
+    padding-bottom: 38px;
+  }
+}
+
+.contacts__contacts-block {
+  text-align: center;
+
+  &--action-type {
+    display: block;
+    padding-bottom: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: @main-dark;
+  }
+
+  &--link {
+    display: block;
+    margin-bottom: 24px;
+    text-decoration: none;
+  }
+
+  &--action-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    color: @main-pink;
+  }
+
+  &--visit {
+    margin-bottom: 60px;
+  }
+}
+
+.contacts__map {
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__text {
+    font-size: 40px;
+  }
+
+  .contacts__contacts-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &--call {
+      margin-right: 101px;
+    }
+
+    &--mail {
+      margin-bottom: 26px;
+    }
+
+    &--visit {
+      margin-bottom: 60px;
+    }
+  }
+
+  .contacts__map {
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__text {
+    font-size: 50px;
+  }
+
+  .contacts__contacts-block {
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
+
+    &--call {
+      margin-right: 115px;
+    }
+
+    &--mail {
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    &--visit {
+      order: 2;
+      margin-right: 97px;
+      margin-bottom: 0;
+    }
+
+    &--city {
+      display: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .contacts__map {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

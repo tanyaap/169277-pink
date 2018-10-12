@@ -3,13 +3,45 @@
 }
 
 .promo-block__promo-text {
+  margin: 0;
+  padding-top: 34px;
+  padding-left: 58px;
+  padding-right: 58px;
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
   text-align: center;
   color: @main-dark;
 
-  &:first-child {
-    padding-top: 46px;
+  &:last-child {
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo-block__promo-text {
+    padding-top: 47px;
+    padding-bottom: 38px;
+    font-size: 40px;
+
+    &:first-child {
+      padding-bottom: 0;
+    }
+
+    &:last-child {
+      padding-top: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-block__promo-text {
+    padding-top: 66px;
+    padding-bottom: 63px;
+    font-size: 50px;
+
+    &:last-child {
+      padding-bottom: 66px;
+    }
   }
 }

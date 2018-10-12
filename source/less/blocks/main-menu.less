@@ -11,3 +11,26 @@
 .main-menu__list {
   .list-reset();
 }
+
+@media (min-width: @desktop-width) {
+  .main-menu {
+    display: flex;
+    margin-bottom: -66px;
+    background-color: rgba(29, 39, 50, 0.7);
+    z-index: 1;
+  }
+
+  .main-menu__menu-header {
+    padding-left: 130px;
+    padding-right: 173px;
+  }
+
+  .main-menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+  }
+}

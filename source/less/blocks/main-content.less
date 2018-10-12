@@ -1,10 +1,23 @@
+.main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .main-content__description {
   margin: 0;
-  padding-top: 97px;
-  padding-bottom: 97px;
+  padding: 42px 23px;
   font-size: 14px;
   font-weight: normal;
   line-height: 2.14;
   text-align: center;
   color: @main-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .main-content__description {
+    padding: 74px 113px 74px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
