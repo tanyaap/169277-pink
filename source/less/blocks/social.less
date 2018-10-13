@@ -6,6 +6,7 @@
 .social__item {
   margin-right: 15px;
   margin-bottom: 41px;
+  font-size: 0;
 
   &:last-child {
     margin-right: 0;
@@ -14,7 +15,24 @@
 
 .social__link {
   .link-reset();
+  display: flex;
+  width: 46px;
+  height: 46px;
+  border: 3px solid @main-light;
+  border-radius: 50%;
   color: @black;
+
+  &--tw {
+    background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+  }
+
+  &--fb {
+    background: url("../img/icon-facebook.svg") no-repeat 50% 50%;
+  }
+
+  &--tube {
+    background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
+  }
 }
 
 @media (min-width: @tablet-width) {

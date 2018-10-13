@@ -24,11 +24,27 @@
 
 .download__link {
   .link-reset();
+  display: flex;
+  width: 47px;
+  height: 56px;
   margin-right: 34px;
   margin-bottom: 28px;
+  font-size: 0;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &--apple {
+    background: url("../img/logo-apple.svg") no-repeat 50% 50%;
+  }
+
+  &--android {
+    background: url("../img/logo-android.svg") no-repeat 50% 50%;
+  }
+
+  &--ms {
+    background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
   }
 }
 
