@@ -1,13 +1,8 @@
 .photo-uploader {
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;*/
-  padding-left: 18px;
-  padding-right: 18px;
   background-color: @main-light;
 }
 
-.photo-uploader__wrapper {
+.photo-uploader__block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,8 +81,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photo-uploader__wrapper {
-    display: flex;
+  .photo-uploader__block {
     flex-direction: row;
     justify-content: center;
   }
@@ -130,6 +124,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photo-uploader {
+    background-color: transparent;
+  }
+
+  .photo-uploader__block {
+    background-color: @main-light;
+  }
+
   .photo-uploader__photo {
     &--tablet {
       display: none;

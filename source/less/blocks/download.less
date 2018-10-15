@@ -1,6 +1,4 @@
 .download {
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
   color: @white;
   background-color: @dark;
@@ -61,6 +59,10 @@
 
 @media (min-width: @tablet-width) {
   .download {
+    position: relative;
+  }
+
+  .download .wrapper {
     position: absolute;
     top: -516px;
     left: 20px;
@@ -89,8 +91,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .download {
-    position: absolute;
+  .download .wrapper {
     top: -605px;
     left: 130px;
   }

@@ -58,7 +58,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
+  .contacts__block {
     display: flex;
     flex-direction: column;
   }
@@ -102,10 +102,11 @@
 
   .contacts__contacts-block {
     flex-wrap: nowrap;
+    justify-content: space-between;
     margin-bottom: 60px;
 
     &--call {
-      margin-right: 115px;
+      margin-right: 0;
     }
 
     &--mail {
@@ -115,7 +116,6 @@
 
     &--visit {
       order: 2;
-      margin-right: 97px;
       margin-bottom: 0;
     }
 

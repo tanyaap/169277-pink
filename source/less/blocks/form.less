@@ -19,6 +19,8 @@
   }
 
   &--description {
+    display: flex;
+    flex-direction: column;
     margin-top: 39px;
   }
 }
@@ -200,18 +202,12 @@
       display: flex;
       flex-direction: column;
     }
-
-    &--description {
-      display: flex;
-      flex-direction: column;
-    }
   }
 
   .form__button-block {
     display: flex;
     justify-content: space-between;
     order: 6;
-    min-width: 616px;
     margin-bottom: 52px;
   }
 
@@ -246,7 +242,6 @@
 
       .form__input {
         width: 371px;
-        /*justify-content: space-between;*/
 
         &--tel {
           order: 1;
@@ -272,10 +267,6 @@
         }
       }
     }
-  }
-
-  .form__button-block {
-    min-width: 936px;
   }
 
   .form__input {

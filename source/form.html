@@ -9,39 +9,45 @@
   <body>
     <header class="page-header">
       <nav class="main-menu">
-        <div class="main-menu__menu-header menu-header-styles">
-          <a class="menu-header-styles__logo" href="#" title="PINK">
-            <img class="menu-header-styles__logo-pic" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-            <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="PINK">
-            <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="PINK">
-          </a>
-          <button class="menu-header-styles__button menu-header-styles__button--close">Закрыть</button>
+        <div class="main-menu__block wrapper">
+          <div class="main-menu__menu-header menu-header-styles">
+            <a class="menu-header-styles__logo" href="#" title="PINK">
+              <img class="menu-header-styles__logo-pic" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+              <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="PINK">
+              <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="PINK">
+            </a>
+            <button class="menu-header-styles__button menu-header-styles__button--close">Закрыть</button>
+          </div>
+          <ul class="main-menu__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html" title="Главная">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html" title="Фотографии">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" title="Конкурс">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/" title="HTML Academy">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-menu__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html" title="Главная">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html" title="Фотографии">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" title="Конкурс">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/" title="HTML Academy">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-header__title-block">
+        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
 
     <main class="main-content">
+      <div class="wrapper">
         <p class="main-content__description">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</p>
+      </div>
 
       <section class="form">
         <form class="form__form-block" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset">
-            <div class="form__fieldset-block form__fieldset-block--name">
+            <div class="form__fieldset-block form__fieldset-block--name wrapper">
               <label for="last-name-field" class="form__field-title">Фамилия:</label>
               <input class="form__input" type="text" name="last-name" id="last-name-field" placeholder="Укажите фамилию*" required>
               <label for="name-field" class="form__field-title">Имя:</label>
@@ -52,7 +58,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <div class="form__fieldset-block form__fieldset-block--achievements">
+            <div class="form__fieldset-block form__fieldset-block--achievements wrapper">
               <legend class="form__achievements-title form__field-title">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="form__achievements-list form-list-checkbox">
                   <li class="form-list-checkbox__item">
@@ -84,7 +90,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <div class="form__fieldset-block form__fieldset-block--contacts">
+            <div class="form__fieldset-block form__fieldset-block--contacts wrapper">
               <label for="phone-field" class="form__field-title form__field-title--tel">Номер телефона</label>
               <input class="form__input form__input--tel" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
               <label for="email-field" class="form__field-title form__field-title--email">Адрес почты</label>
@@ -93,7 +99,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <div class="form__fieldset-block form__fieldset-block--app">
+            <div class="form__fieldset-block form__fieldset-block--app wrapper">
               <legend class="form__app-title form__field-title">С каким приложением путешествовали?</legend>
                 <ul class="form__app-list form-list-radio">
                   <li class="form-list-radio__item">
@@ -113,13 +119,13 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <div class="form__fieldset-block form__fieldset-block--description">
+            <div class="form__fieldset-block form__fieldset-block--description wrapper">
               <label for="description-field" class="form__field-title form__field-title--textarea">Опишите свои эмоции</label>
               <textarea class="form__input form__input--textarea" name="description" id="description-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
 
-          <div class="form__button-block">
+          <div class="form__button-block wrapper">
             <button class="form__submit submit-button" type="submit">Отправить форму</button>
             <p class="form__reference"><span class="form__star">*</span> &#8211; обязательные поля</p>
           </div>
@@ -128,31 +134,33 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#" title="PINK">
-        <img class="page-footer__logo-pic" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
-        <img class="page-footer__logo-pic page-footer__logo-pic--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="PINK">
-      </a>
+      <div class="page-footer__block wrapper">
+        <a class="page-footer__logo" href="#" title="PINK">
+          <img class="page-footer__logo-pic" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+          <img class="page-footer__logo-pic page-footer__logo-pic--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="PINK">
+        </a>
 
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--tw" href="#" title="Твиттер">Твиттер</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" title="Фейсбук">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--tube" href="#" title="Ютюб">Ютюб</a>
-          </li>
-        </ul>
-      </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#" title="Твиттер">Твиттер</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#" title="Фейсбук">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tube" href="#" title="Ютюб">Ютюб</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
-            <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
-        </p>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
+              <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
 

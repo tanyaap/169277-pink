@@ -9,115 +9,127 @@
   <body>
     <header class="page-header">
       <nav class="main-menu">
-        <div class="main-menu__menu-header menu-header-styles">
-          <a class="menu-header-styles__logo" href="#" title="PINK">
-            <img class="menu-header-styles__logo-pic" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-            <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="PINK">
-            <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="PINK">
-          </a>
-          <button class="menu-header-styles__button menu-header-styles__button--close">Закрыть</button>
+        <div class="main-menu__block wrapper">
+          <div class="main-menu__menu-header menu-header-styles">
+            <a class="menu-header-styles__logo" href="#" title="PINK">
+              <img class="menu-header-styles__logo-pic" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+              <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="PINK">
+              <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="PINK">
+            </a>
+            <button class="menu-header-styles__button menu-header-styles__button--close">Закрыть</button>
+          </div>
+          <ul class="main-menu__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" title="Главная">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html" title="Фотографии">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html" title="Конкурс">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/" title="HTML Academy">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-menu__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" title="Главная">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html" title="Фотографии">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html" title="Конкурс">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/" title="HTML Academy">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
 
       <div class="page-header__picture">
-        <img class="page-header__picture-pic" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="">
-        <img class="page-header__picture-pic page-header__picture-pic--tablet" src="img/iphone-hand-tablet@1x.png" width="700" height="545" alt="">
-        <img class="page-header__picture-pic page-header__picture-pic--desktop" src="img/iphone-hand-desktop@1x.png" width="1050" height="645" alt="">
+        <div class="wrapper">
+          <img class="page-header__picture-pic" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="">
+          <img class="page-header__picture-pic page-header__picture-pic--tablet" src="img/iphone-hand-tablet@1x.png" width="700" height="545" alt="">
+          <img class="page-header__picture-pic page-header__picture-pic--desktop" src="img/iphone-hand-desktop@1x.png" width="1050" height="645" alt="">
+        </div>
       </div>
     </header>
 
     <main class="main-content">
       <div class="download">
-        <h1 class="download__title">Взгляните на жизнь иначе!</h1>
-        <div class="download__main-link-block">
-          <a class="download__main-link btn" href="#" title="Скачать приложение">Скачать приложение</a>
+        <div class="wrapper">
+          <h1 class="download__title">Взгляните на жизнь иначе!</h1>
+          <div class="download__main-link-block">
+            <a class="download__main-link btn" href="#" title="Скачать приложение">Скачать приложение</a>
+          </div>
+          <div class="download__links">
+            <a class="download__link download__link--apple" href="#" title="Apple">Apple</a>
+            <a class="download__link download__link--android" href="#" title="Android">Android</a>
+            <a class="download__link download__link--ms" href="#" title="Windows">Windows</a>
+          </div>
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <div class="download__links">
-          <a class="download__link download__link--apple" href="#" title="Apple">Apple</a>
-          <a class="download__link download__link--android" href="#" title="Android">Android</a>
-          <a class="download__link download__link--ms" href="#" title="Windows">Windows</a>
-        </div>
-        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
 
-      <div class="promo-block">
+      <div class="promo-block wrapper">
         <p class="promo-block__promo-text">Устали от серости мегаполиса?</p>
         <p class="promo-block__promo-text">Нам есть, что вам предложить!</p>
       </div>
 
       <section class="advantages">
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="">
-            <h2 class="advantages__title">Поднимает настроение</h2>
-            <p class="advantages__description">Приложение позволить вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="">
-            <h2 class="advantages__title">Меняет мир вокруг</h2>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="">
-            <h2 class="advantages__title">Заводит новых друзей</h2>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="advantages__picture-block">
-          <img class="advantages__picture" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
-          <img class="advantages__picture advantages__picture--tablet" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="">
+        <div class="advantages__block wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="">
+              <h2 class="advantages__title">Поднимает настроение</h2>
+              <p class="advantages__description">Приложение позволить вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="">
+              <h2 class="advantages__title">Меняет мир вокруг</h2>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="">
+              <h2 class="advantages__title">Заводит новых друзей</h2>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="advantages__picture-block">
+            <img class="advantages__picture" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
+            <img class="advantages__picture advantages__picture--tablet" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="">
+          </div>
         </div>
       </section>
 
       <article class="research">
-        <span class="research__picture">24</span>
-        <div class="research__block">
-          <h2 class="research__title">Эффект на 24 часа!</h2>
-            <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="research__text research__text--link" href="#" title="Узнать больше">Узнать больше об исследовании</a>
+        <div class="research__block wrapper">
+          <span class="research__picture">24</span>
+          <div class="research__article">
+            <h2 class="research__title">Эффект на 24 часа!</h2>
+              <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="research__text research__text--link" href="#" title="Узнать больше">Узнать больше об исследовании</a>
+          </div>
         </div>
       </article>
 
       <section class="reviews">
-        <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
-            <h2 class="reviews__author">Николай Петров
-              <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
-            </h2>
-            <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-          </li>
-          <li class="reviews__item slider__item">
-            <h2 class="reviews__author">Николай Петров
-              <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
-            </h2>
-            <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-          </li>
-          <li class="reviews__item slider__item">
-            <h2 class="reviews__author">Николай Петров
-              <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
-            </h2>
-            <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-          </li>
-        </ul>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="reviews__block wrapper">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <h2 class="reviews__author">Николай Петров
+                <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
+              </h2>
+              <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h2 class="reviews__author">Николай Петров
+                <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
+              </h2>
+              <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h2 class="reviews__author">Николай Петров
+                <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
+              </h2>
+              <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </section>
 
       <section class="prices">
@@ -190,26 +202,28 @@
       </section>
 
       <section class="contacts">
-        <p class="contacts__text">Остались вопросы?</p>
-        <p class="contacts__text">Свяжитесь с нами</p>
-        <div class="contacts__contacts-block">
-          <div class="contacts__contacts-block--call">
-            <span class="contacts__contacts-block--action-type">Звоните:</span>
-            <a class="contacts__contacts-block--link" href="tel:+78125556666">
-              <span class="contacts__contacts-block--action-value">+7 (812) 555-66-66</span>
-            </a>
-          </div>
-          <div class="contacts__contacts-block--mail">
-            <span class="contacts__contacts-block--action-type">Пишите:</span>
-            <a class="contacts__contacts-block--link" href="mailto:mail@htmlacademy.ru">
-              <span class="contacts__contacts-block--action-value">mail@htmlacademy.ru</span>
-            </a>
-          </div>
-          <div class="contacts__contacts-block--visit">
-            <span class="contacts__contacts-block--action-type">Приезжайте в гости:</span>
-            <span class="contacts__contacts-block--action-value">
-              <span class="contacts__contacts-block--city">г. Санкт-Петербург,</span> ул. Большая Конюшенная 19/8
-            </span>
+        <div class="contacts__block wrapper">
+          <p class="contacts__text">Остались вопросы?</p>
+          <p class="contacts__text">Свяжитесь с нами</p>
+          <div class="contacts__contacts-block">
+            <div class="contacts__contacts-block--call">
+              <span class="contacts__contacts-block--action-type">Звоните:</span>
+              <a class="contacts__contacts-block--link" href="tel:+78125556666">
+                <span class="contacts__contacts-block--action-value">+7 (812) 555-66-66</span>
+              </a>
+            </div>
+            <div class="contacts__contacts-block--mail">
+              <span class="contacts__contacts-block--action-type">Пишите:</span>
+              <a class="contacts__contacts-block--link" href="mailto:mail@htmlacademy.ru">
+                <span class="contacts__contacts-block--action-value">mail@htmlacademy.ru</span>
+              </a>
+            </div>
+            <div class="contacts__contacts-block--visit">
+              <span class="contacts__contacts-block--action-type">Приезжайте в гости:</span>
+              <span class="contacts__contacts-block--action-value">
+                <span class="contacts__contacts-block--city">г. Санкт-Петербург,</span> ул. Большая Конюшенная 19/8
+              </span>
+            </div>
           </div>
         </div>
         <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта">
@@ -219,31 +233,33 @@
     </main>
 
     <footer class="page-footer page-footer--index">
-      <a class="page-footer__logo" href="#" title="PINK">
-        <img class="page-footer__logo-pic" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
-        <img class="page-footer__logo-pic page-footer__logo-pic--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="PINK">
-      </a>
+      <div class="page-footer__block wrapper">
+        <a class="page-footer__logo" href="#" title="PINK">
+          <img class="page-footer__logo-pic" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+          <img class="page-footer__logo-pic page-footer__logo-pic--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="PINK">
+        </a>
 
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--tw" href="#" title="Твиттер">Твиттер</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" title="Фейсбук">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--tube" href="#" title="Ютюб">Ютюб</a>
-          </li>
-        </ul>
-      </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#" title="Твиттер">Твиттер</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#" title="Фейсбук">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tube" href="#" title="Ютюб">Ютюб</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
-            <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
-        </p>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
+              <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   </body>

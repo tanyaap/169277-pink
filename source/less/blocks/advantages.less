@@ -1,6 +1,4 @@
 .advantages {
-  padding-left: 34px;
-  padding-right: 34px;
   background-color: @main-light;
 }
 
@@ -53,10 +51,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages {
+  .advantages__block {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
 
   .advantages__list {
@@ -81,13 +80,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .advantages {
-    display: block;
-  }
-
   .advantages__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 0;
   }
 
