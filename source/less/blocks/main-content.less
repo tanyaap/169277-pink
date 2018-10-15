@@ -1,7 +1,5 @@
 .main-content {
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-content__description {
@@ -16,6 +14,8 @@
 
 @media (min-width: @tablet-width) {
   .main-content__description {
+    display: flex;
+    flex-direction: column;
     padding: 74px 113px 74px;
     font-size: 18px;
     line-height: 1.67;

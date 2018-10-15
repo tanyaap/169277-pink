@@ -1,7 +1,4 @@
 .prices {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: @main-light;
 }
 
@@ -17,18 +14,9 @@
   border-collapse: collapse;
   margin-bottom: 45px;
   margin-top: 100px;
-  display: table;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
-}
-
-.prices__item {
-  display: table-row;
-}
-
-.prices__content {
-  display: table-cell;
 }
 
 .prices__tariff {
@@ -71,6 +59,7 @@
 
   &--first {
     font-size: 0;
+    background: none;
   }
 
   &--smiles {
@@ -89,12 +78,27 @@
 }
 
 .prices__toggles {
+  display: flex;
+  justify-content: center;
+  margin: 0;
   padding-bottom: 51px;
 }
 
 @media (min-width: @tablet-width) {
+  .prices {
+    display: flex;
+    justify-content: center;
+  }
+
+  .prices__table {
+    position: static;
+    height: auto;
+  }
+
   .prices__list {
-    margin-bottom: 75px;
+    position: static;
+    transform: none;
+    margin: 70px auto;
   }
 
   .prices__tariff {

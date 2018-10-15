@@ -1,13 +1,20 @@
 .photo-uploader {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
   padding-left: 18px;
   padding-right: 18px;
   background-color: @main-light;
 }
 
+.photo-uploader__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .photo-uploader__photo {
+  flex-shrink: 0;
   margin-bottom: 42px;
   padding-top: 20px;
 
@@ -17,11 +24,53 @@
   }
 }
 
+.photo-uploader__manager {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-uploader__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+}
+
+.photo-uploader__toggle {
+  width: 44px;
+  height: 44px;
+  border: none;
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--crop {
+    background: url("../img/icon-editor-crop.svg") no-repeat;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+    background: url("../img/icon-editor-fill.svg") no-repeat;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+    background: url("../img/icon-editor-contrast.svg") no-repeat;
+  }
+}
+
 .photo-uploader__bar {
   margin-bottom: 73px;
 }
 
 .photo-uploader__buttons {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 41px;
 }
 
@@ -36,19 +85,9 @@
   border-color: rgba(40, 54, 69, 0.1);
 }
 
-.photo-uploader__manager {
-  display: flex;
-  flex-direction: column;
-}
-
-.photo-uploader__toggles {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @media (min-width: @tablet-width) {
-  .photo-uploader {
+  .photo-uploader__wrapper {
+    display: flex;
     flex-direction: row;
     justify-content: center;
   }
@@ -65,8 +104,28 @@
     }
   }
 
+  .photo-uploader__manager {
+    align-items: flex-start;
+  }
+
   .photo-uploader__toggles {
     flex-direction: column;
+    margin-top: 66px;
+  }
+
+  .photo-uploader__toggle {
+    margin-right: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -86,7 +145,7 @@
   }
 
   .photo-uploader__buttons {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }

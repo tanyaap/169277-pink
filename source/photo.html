@@ -16,7 +16,6 @@
             <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="PINK">
           </a>
           <button class="menu-header-styles__button menu-header-styles__button--close">Закрыть</button>
-          <button class="menu-header-styles__button menu-header-styles__button--open">Раскрыть меню</button>
         </div>
         <ul class="main-menu__list site-list">
           <li class="site-list__item">
@@ -64,13 +63,14 @@
             <img class="posts-list__photo posts-list__photo--tablet" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="">
             <img class="posts-list__photo posts-list__photo--desktop" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="">
             <div class="posts-list__info">
-            <p class="posts-list__author">Левон
-              <span class="posts-list__time">(5 часов назад)</span>
-            </p>
-            <p class="posts-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <span class="posts-list__like">Нравится:
-              <span class="posts-list__like posts-list__likes-number">356</span>
-            </span>
+              <p class="posts-list__author">Левон
+                <span class="posts-list__time">(5 часов назад)</span>
+              </p>
+              <p class="posts-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <span class="posts-list__like">Нравится:
+                <span class="posts-list__like posts-list__likes-number">356</span>
+              </span>
+            </div>
           </li>
           <li class="posts-list__item">
             <img class="posts-list__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
@@ -148,19 +148,21 @@
       <p class="main-content__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
 
       <section class="photo-uploader">
-        <img class="photo-uploader__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="">
-        <img class="photo-uploader__photo photo-uploader__photo--tablet" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="">
-        <img class="photo-uploader__photo photo-uploader__photo--desktop" src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="">
-        <div class="photo-uploader__manager">
-          <p class="photo-uploader__toggles">
-            <button class="photo-uploader__toggle" type="button">Обрезать</button>
-            <button class="photo-uploader__toggle" type="button">Изменить цвет</button>
-            <button class="photo-uploader__toggle" type="button">Изменить яркость</button>
-          </p>
-          <div class="photo-uploader__bar"></div>
-          <div class="photo-uploader__buttons">
-            <button class="photo-uploader__send btn" type="button">Запостить</button>
-            <button class="photo-uploader__cancel btn" type="button">Отмена</button>
+        <div class="photo-uploader__wrapper">
+          <img class="photo-uploader__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="">
+          <img class="photo-uploader__photo photo-uploader__photo--tablet" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="">
+          <img class="photo-uploader__photo photo-uploader__photo--desktop" src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="">
+          <div class="photo-uploader__manager">
+            <p class="photo-uploader__toggles">
+              <button class="photo-uploader__toggle photo-uploader__toggle--crop" type="button">Обрезать</button>
+              <button class="photo-uploader__toggle photo-uploader__toggle--fill" type="button">Изменить цвет</button>
+              <button class="photo-uploader__toggle photo-uploader__toggle--contrast" type="button">Изменить яркость</button>
+            </p>
+            <div class="photo-uploader__bar"></div>
+            <div class="photo-uploader__buttons">
+              <button class="photo-uploader__send btn" type="button">Запостить</button>
+              <button class="photo-uploader__cancel btn" type="button">Отмена</button>
+            </div>
           </div>
         </div>
       </section>
@@ -187,11 +189,11 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
-              <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-            </a>
-          </p>
+        <p class="copyright__text">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
+            <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </p>
       </div>
     </footer>
   </body>

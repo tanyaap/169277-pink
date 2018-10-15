@@ -1,7 +1,4 @@
 .photo-block {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -10,13 +7,23 @@
   .list-reset();
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: @tablet-width) {
+  .photo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .photo-block__list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
+    width: 620px;
+    box-sizing: border-box;
   }
 }
 
@@ -24,5 +31,9 @@
   .photo-block {
     padding-left: 130px;
     padding-right: 130px;
+  }
+
+  .photo-block__list {
+    width: 940px;
   }
 }
