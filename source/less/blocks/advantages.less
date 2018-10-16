@@ -4,17 +4,24 @@
 
 .advantages__list {
   .list-reset();
+  margin-bottom: 40px;
 }
 
 .advantages__item {
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 
   &:first-child {
-    padding-top: 119px;
+    padding-top: 62px;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
   }
 }
 
 .advantages__title {
+  margin: 0;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.33;
@@ -23,9 +30,111 @@
 }
 
 .advantages__description {
+  margin: 0;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.71;
   text-align: center;
   color: @main-dark;
+}
+
+.advantages__picture-block {
+  text-align: center;
+}
+
+.advantages__picture {
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__block {
+    display: flex;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .advantages__picture-block {
+    order: 1;
+    margin-right: 41px;
+  }
+
+  .advantages__picture {
+    display: none;
+
+    &--tablet {
+      display: block;
+      flex-shrink: 0;
+    }
+  }
+
+  .advantages__item {
+    width: 266px;
+    padding-bottom: 35px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .advantages__title,
+  .advantages__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    justify-content: space-between;
+    order: 1;
+    width: 960px;
+    margin-bottom: 0;
+  }
+
+  .advantages__picture-block {
+    order: 2;
+  }
+
+  .advantages__item {
+    width: 236px;
+    margin: 0;
+    padding-bottom: 67px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .advantages__picture {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .advantages__title,
+  .advantages__description {
+    text-align: center;
+  }
 }

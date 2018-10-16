@@ -11,3 +11,23 @@
 .main-menu__list {
   .list-reset();
 }
+
+@media (min-width: @desktop-width) {
+  .main-menu {
+    background-color: rgba(29, 39, 50, 0.7);
+  }
+
+  .main-menu__block {
+    display: flex;
+  }
+
+  .main-menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+  }
+}

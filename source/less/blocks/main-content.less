@@ -1,10 +1,21 @@
+.main-content {
+  position: relative;
+}
+
 .main-content__description {
   margin: 0;
-  padding-top: 97px;
-  padding-bottom: 97px;
+  padding-top: 74px;
+  padding-bottom: 74px;
   font-size: 14px;
   font-weight: normal;
   line-height: 2.14;
   text-align: center;
   color: @main-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .main-content__description {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
