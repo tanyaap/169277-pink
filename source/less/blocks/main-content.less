@@ -4,18 +4,55 @@
 
 .main-content__description {
   margin: 0;
-  padding-top: 74px;
-  padding-bottom: 74px;
+  padding-top: 45px;
+  padding-bottom: 52px;
   font-size: 14px;
   font-weight: normal;
   line-height: 2.14;
   text-align: center;
   color: @main-dark;
+
+  &--bottom {
+    padding: 41px 55px 44px;
+  }
+
+  &--form {
+    padding-bottom: 37px;
+  }
+}
+
+@media (max-width: @uptotablet-width-only) {
+  .main-content__description span {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-content__description {
+    padding: 93px 25px 75px;
     font-size: 18px;
     line-height: 1.67;
+
+    &--bottom {
+      padding: 48px 167px 66px;
+    }
+
+    &--form {
+      padding: 93px 65px 70px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-content__description {
+    padding: 93px 150px 87px;
+
+    &--bottom {
+      padding: 5px 327px 66px;
+    }
+
+    &--form {
+      padding: 93px 75px 66px;
+    }
   }
 }

@@ -1,26 +1,28 @@
 .prices {
-  background-color: @main-light;
+  background: @main-light url("../img/bg-triangle-white.svg") no-repeat;
 }
 
 .prices__table {
   overflow: hidden;
   width: 100%;
   position: relative;
-  height: 427px;
+  height: 415px;
+  margin-bottom: 40px;
 }
 
 .prices__list {
   .list-reset();
   border-collapse: collapse;
-  margin-bottom: 45px;
-  margin-top: 100px;
+  margin-top: 130px;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
 }
 
 .prices__tariff {
-  padding: 17px 89px 18px;
+  position: relative;
+  min-width: 276px;
+  padding: 17px 0 18px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -28,8 +30,24 @@
   text-transform: uppercase;
   color: @white;
   background-color: @main-dark;
-  border-top: solid 2px @main-dark;
-  border-bottom: solid 2px @main-dark;
+  border: 2px solid #e5e5e5;
+
+  &:nth-child(3) {
+    background: @main-dark url("../img/bg-hit.svg") no-repeat;
+  }
+
+  &--ribbon {
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    padding-left: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 2.1;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+  }
 
   &--type {
     display: block;
@@ -55,11 +73,13 @@
   text-transform: uppercase;
   color: @main-dark;
   background: url("../img/icon-yes.svg") no-repeat 90% 50%;
-  border: solid 2px #e5e5e5;
+  border: 2px solid #e5e5e5;
 
   &--first {
+    padding: 0;
     font-size: 0;
     background: none;
+    border: none;
   }
 
   &--smiles {
@@ -80,8 +100,9 @@
 .prices__toggles {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0;
-  padding-bottom: 51px;
+  padding-bottom: 48px;
 }
 
 @media (min-width: @tablet-width) {
@@ -93,16 +114,33 @@
   .prices__table {
     position: static;
     height: auto;
+    margin-bottom: 0;
   }
 
   .prices__list {
     position: static;
     transform: none;
-    margin: 70px auto;
+    margin: 110px auto 70px;
   }
 
   .prices__tariff {
-    padding: 17px 40px 18px;
+    min-width: auto;
+    padding: 12px 40px 7px;
+    font-size: 16px;
+    line-height: 1.88;
+
+    &:nth-child(3) {
+      background: @main-dark url("../img/bg-hit-tablet.svg") no-repeat;
+    }
+
+    &--type {
+      padding-bottom: 0;
+    }
+
+    &--price {
+      font-size: 18px;
+      line-height: 1.67;
+    }
   }
 
   .prices__option:not(.prices__option--first) {
@@ -116,7 +154,7 @@
       padding: 8px 25px 6px 15px;
       font-size: 14px;
       text-transform: none;
-      background: none;
+      border: 2px solid #e5e5e5;
     }
 
     &--smiles {
@@ -136,5 +174,31 @@
 
   .prices__toggles {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices__list {
+    margin: 150px auto 98px;
+  }
+
+  .prices__tariff {
+    padding: 17px 70px 20px;
+    font-size: 18px;
+    line-height: 1.67;
+
+    &--price {
+      font-size: 24px;
+      line-height: 1.25;
+    }
+  }
+
+  .prices__option {
+    padding: 16px 66px 12px 24px;
+
+    &--first {
+      font-size: 18px;
+      line-height: 1.67;
+    }
   }
 }
