@@ -23,6 +23,14 @@
     border-radius: 50%;
     box-sizing: border-box;
   }
+
+  &:hover::before {
+    border-color: @main-dark;
+  }
+
+  &:active::before {
+    border-color: @main-pink;
+  }
 }
 
 .form-list-radio__item input {

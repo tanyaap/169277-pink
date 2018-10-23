@@ -21,6 +21,14 @@
     background-color: @white;
     border: 2px solid @grey;
   }
+
+  &:hover::before {
+    border-color: @main-dark;
+  }
+
+  &:active::before {
+    border-color: @main-pink;
+  }
 }
 
 .form-list-checkbox__item input {
