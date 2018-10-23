@@ -8,15 +8,17 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-menu">
+      <nav class="main-menu main-menu--closed main-menu--nojs">
         <div class="main-menu__block wrapper">
           <div class="main-menu__menu-header menu-header-styles">
-            <a class="menu-header-styles__logo" href="#" title="PINK">
+            <a class="menu-header-styles__logo" title="PINK">
               <img class="menu-header-styles__logo-pic" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
               <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="PINK">
               <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="PINK">
             </a>
-            <button class="menu-header-styles__button menu-header-styles__button--close">Закрыть</button>
+            <button class="menu-header-styles__button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
           </div>
           <ul class="main-menu__list site-list">
             <li class="site-list__item">
@@ -50,12 +52,18 @@
           <div class="download__block">
             <h1 class="download__title">Взгляните на жизнь иначе!</h1>
             <div class="download__main-link-block">
-              <a class="download__main-link btn" href="#" title="Скачать приложение">Скачать приложение</a>
+              <a class="download__main-link btn" href="https://www.apple.com/ru/itunes/" title="Скачать приложение">Скачать приложение</a>
             </div>
             <div class="download__links">
-              <a class="download__link download__link--apple" href="#" title="Apple">Apple</a>
-              <a class="download__link download__link--android" href="#" title="Android">Android</a>
-              <a class="download__link download__link--ms" href="#" title="Windows">Windows</a>
+              <a class="download__link download__link--apple" href="https://www.apple.com/ru/itunes/" title="Apple">
+                <span class="visually-hidden">Apple</span>
+              </a>
+              <a class="download__link download__link--android" href="https://play.google.com/store/apps" title="Android">
+                <span class="visually-hidden">Android</span>
+              </a>
+              <a class="download__link download__link--ms" href="https://www.microsoft.com/ru-ru/store/apps" title="Windows">
+                <span class="visually-hidden">Windows</span>
+              </a>
             </div>
             <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
@@ -104,139 +112,170 @@
         </div>
       </article>
 
-      <section class="reviews">
+      <section class="reviews slider">
+        <input type="radio" name="review-field" value="review" id="review1" class="slider__review1" checked>
+        <input type="radio" name="review-field" value="review" id="review2" class="slider__review2">
+        <input type="radio" name="review-field" value="review" id="review3" class="slider__review3">
         <div class="reviews__block wrapper">
+          <button class="reviews__block__toggle reviews__block__toggle--left" type="button">
+            <span class="visually-hidden">Влево</span>
+          </button>
+          <button class="reviews__block__toggle reviews__block__toggle--right" type="button">
+            <span class="visually-hidden">Вправо</span>
+          </button>
           <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
+            <li class="reviews__item slider__item slider__item--1">
               <h2 class="reviews__author">Николай Петров
                 <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
               </h2>
               <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
-            <li class="reviews__item slider__item">
-              <h2 class="reviews__author">Николай Петров
-                <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
+            <li class="reviews__item slider__item slider__item--2">
+              <h2 class="reviews__author">Алиса Сладкоежкина
+                <span class="reviews__author reviews__author--info">20 лет, балерина</span>
               </h2>
-              <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <p class="reviews__review-text">&laquo;Как представитель творческой профессии я люблю все яркое, розовый - однозначно мой цвет! Приложение позволяет посмотреть на мир через &laquo;розовые очки&raquo;, что иногда бывает полезно.&raquo;</p>
             </li>
-            <li class="reviews__item slider__item">
-              <h2 class="reviews__author">Николай Петров
-                <span class="reviews__author reviews__author--info">25 лет, водитель трамвая</span>
+            <li class="reviews__item slider__item slider__item--3">
+              <h2 class="reviews__author">Василий Пупкин-Мупкин
+                <span class="reviews__author reviews__author--info">30 лет, патологоанатом</span>
               </h2>
-              <p class="reviews__review-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <p class="reviews__review-text">&laquo;Очень необычно и совсем не напоминает о работе. Данное приложение с легкостью погружает в мир фотографии, позволяет отвлечься от важных дел и пообщаться с живыми людьми!&raquo;</p>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <div class="reviews__toggles slider__carousel">
+            <label for="review1" class="slider__toggle">
+              <span class="visually-hidden">1</span>
+            </label>
+            <label for="review2" class="slider__toggle">
+              <span class="visually-hidden">2</span>
+            </label>
+            <label for="review3" class="slider__toggle">
+              <span class="visually-hidden">3</span>
+            </label>
+          </div>
         </div>
       </section>
 
-      <section class="prices">
-        <div class="prices__table">
-          <table class="prices__list">
-            <tr>
-              <th></th>
-              <th class="prices__tariff">
-                <span class="prices__tariff--type">База</span>
-                <span class="prices__tariff--price">1,99 USD</span>
-              </th>
-              <th class="prices__tariff">
-                <span class="prices__tariff--type">Стандарт</span>
-                <span class="prices__tariff--price">3,99 USD</span>
-              </th>
-              <th class="prices__tariff">
-                <span class="prices__tariff--type">Анлим</span>
-                <span class="prices__tariff--price">9,99 USD</span>
-              </th>
-            </tr>
-            <tr>
-              <td class="prices__option prices__option--first">
-                <span>Розовый фильтр</span>
-              </td>
-              <td class="prices__option">
-                <span>Розовый фильтр</span>
-              </td>
-              <td class="prices__option">
-                <span>Розовый фильтр</span>
-              </td>
-              <td class="prices__option">
-                <span>Розовый фильтр</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="prices__option prices__option--first">
-                <span>Смайлики</span>
-              </td>
-              <td class="prices__option prices__option--smiles">
-                <span>Смайлики</span>
-              </td>
-              <td class="prices__option prices__option--smiles">
-                <span>Смайлики</span>
-              </td>
-              <td class="prices__option prices__option--smiles">
-                <span>Смайлики</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="prices__option prices__option--first">
-                <span>Комментарии</span>
-              </td>
-              <td class="prices__option prices__option--comment">
-                <span>Комментарии</span>
-              </td>
-              <td class="prices__option prices__option--comment">
-                <span>Комментарии</span>
-              </td>
-              <td class="prices__option prices__option--comment">
-                <span>Комментарии</span>
-              </td>
-            </tr>
-          </table>
+      <section class="prices slider">
+        <input type="radio" name="prices-field" value="prices" id="prices1" class="slider__prices1">
+        <input type="radio" name="prices-field" value="prices" id="prices2" class="slider__prices2" checked>
+        <input type="radio" name="prices-field" value="prices" id="prices3" class="slider__prices3">
+        <div class="prices__block">
+          <div class="prices__table">
+            <table class="prices__list">
+              <tr>
+                <th></th>
+                <th class="prices__tariff">
+                  <span class="prices__tariff--type">База</span>
+                  <span class="prices__tariff--price">1,99 USD</span>
+                </th>
+                <th class="prices__tariff">
+                  <span class="prices__tariff--ribbon">Хит</span>
+                  <span class="prices__tariff--type">Стандарт</span>
+                  <span class="prices__tariff--price">3,99 USD</span>
+                </th>
+                <th class="prices__tariff">
+                  <span class="prices__tariff--type">Анлим</span>
+                  <span class="prices__tariff--price">9,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="prices__option prices__option--first">
+                  <span>Розовый фильтр</span>
+                </td>
+                <td class="prices__option">
+                  <span>Розовый фильтр</span>
+                </td>
+                <td class="prices__option">
+                  <span>Розовый фильтр</span>
+                </td>
+                <td class="prices__option">
+                  <span>Розовый фильтр</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="prices__option prices__option--first">
+                  <span>Смайлики</span>
+                </td>
+                <td class="prices__option prices__option--smiles">
+                  <span>Смайлики</span>
+                </td>
+                <td class="prices__option prices__option--smiles">
+                  <span>Смайлики</span>
+                </td>
+                <td class="prices__option prices__option--smiles">
+                  <span>Смайлики</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="prices__option prices__option--first">
+                  <span>Комментарии</span>
+                </td>
+                <td class="prices__option prices__option--comment">
+                  <span>Комментарии</span>
+                </td>
+                <td class="prices__option prices__option--comment">
+                  <span>Комментарии</span>
+                </td>
+                <td class="prices__option prices__option--comment">
+                  <span>Комментарии</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="prices__toggles slider__carousel">
+            <label for="prices1" class="slider__toggle">
+              <span class="visually-hidden">1</span>
+            </label>
+            <label for="prices2" class="slider__toggle">
+              <span class="visually-hidden">2</span>
+            </label>
+            <label for="prices3" class="slider__toggle">
+              <span class="visually-hidden">3</span>
+            </label>
+          </div>
         </div>
-        <p class="prices__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
       </section>
 
       <section class="contacts">
-        <div class="contacts__block wrapper">
-          <p class="contacts__text">Остались вопросы?</p>
-          <p class="contacts__text">Свяжитесь с нами</p>
-          <div class="contacts__contacts-block">
-            <div class="contacts__contacts-block--call">
-              <span class="contacts__contacts-block--action-type">Звоните:</span>
-              <a class="contacts__contacts-block--link" href="tel:+78125556666">
-                <span class="contacts__contacts-block--action-value">+7 (812) 555-66-66</span>
-              </a>
-            </div>
-            <div class="contacts__contacts-block--mail">
-              <span class="contacts__contacts-block--action-type">Пишите:</span>
-              <a class="contacts__contacts-block--link" href="mailto:mail@htmlacademy.ru">
-                <span class="contacts__contacts-block--action-value">mail@htmlacademy.ru</span>
-              </a>
-            </div>
-            <div class="contacts__contacts-block--visit">
-              <span class="contacts__contacts-block--action-type">Приезжайте в гости:</span>
-              <span class="contacts__contacts-block--action-value">
-                <span class="contacts__contacts-block--city">г. Санкт-Петербург,</span> ул. Большая Конюшенная 19/8
-              </span>
+        <div class="contacts__block">
+          <div class="contacts__block--filler">
+            <div class="wrapper">
+              <p class="contacts__text">Остались вопросы?</p>
+              <p class="contacts__text">Свяжитесь с нами!</p>
+              <div class="contacts__contacts-info">
+                <div class="contacts__contacts-info--call">
+                  <span class="contacts__contacts-info--action-type">Звоните:</span>
+                  <a class="contacts__contacts-info--link" href="tel:+78125556666">
+                    <span class="contacts__contacts-info--action-value">+7 (812) 555-66-66</span>
+                  </a>
+                </div>
+                <div class="contacts__contacts-info--mail">
+                  <span class="contacts__contacts-info--action-type">Пишите:</span>
+                  <a class="contacts__contacts-info--link" href="mailto:mail@htmlacademy.ru">
+                    <span class="contacts__contacts-info--action-value contacts__contacts-info--action-value-mail">mail@htmlacademy.ru</span>
+                  </a>
+                </div>
+                <div class="contacts__contacts-info--visit">
+                  <span class="contacts__contacts-info--action-type">Приезжайте в гости:</span>
+                  <span class="contacts__contacts-info--action-value">ул. Большая Конюшенная 19/8</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта">
-        <img class="contacts__map contacts__map--tablet" src="img/bg-map-tablet@1x.jpg" width="700" height="848" alt="Карта">
-        <img class="contacts__map contacts__map--desktop" src="img/bg-map-desktop@1x.jpg" width="1200" height="976" alt="Карта">
+        <div class="contacts__map-block">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта">
+          <img class="contacts__map contacts__map--tablet" src="img/bg-map-tablet@1x.jpg" width="700" height="848" alt="Карта">
+          <img class="contacts__map contacts__map--desktop" src="img/bg-map-desktop@1x.jpg" width="1200" height="976" alt="Карта">
+        </div>
       </section>
     </main>
 
     <footer class="page-footer page-footer--index">
       <div class="page-footer__block wrapper">
-        <a class="page-footer__logo" href="#" title="PINK">
+        <a class="page-footer__logo" title="PINK">
           <img class="page-footer__logo-pic" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
           <img class="page-footer__logo-pic page-footer__logo-pic--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="PINK">
         </a>
@@ -244,13 +283,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--tw" href="#" title="Твиттер">Твиттер</a>
+              <a class="social__link social__link--tw" href="#" title="Твиттер">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="#" title="Фейсбук">Фейсбук</a>
+              <a class="social__link social__link--fb" href="#" title="Фейсбук">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--tube" href="#" title="Ютюб">Ютюб</a>
+              <a class="social__link social__link--tube" href="#" title="Ютюб">
+                <span class="visually-hidden">Ютюб</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -264,5 +309,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/main-menu_button.js"></script>
   </body>
 </html>

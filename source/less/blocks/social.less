@@ -6,7 +6,6 @@
 .social__item {
   margin-right: 15px;
   margin-bottom: 41px;
-  font-size: 0;
 
   &:last-child {
     margin-right: 0;
@@ -21,6 +20,7 @@
   border: 3px solid @main-light;
   border-radius: 50%;
   color: @black;
+  box-sizing: border-box;
 
   &--tw {
     background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
@@ -32,6 +32,15 @@
 
   &--tube {
     background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
+  }
+
+  &:hover {
+    border-color: @main-dark;
+  }
+
+  &:active {
+    border-color: @main-dark;
+    opacity: 0.1;
   }
 }
 

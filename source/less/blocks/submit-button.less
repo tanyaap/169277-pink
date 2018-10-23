@@ -1,7 +1,5 @@
 .submit-button {
-  min-width: 276px;
-  padding-top: 15px;
-  padding-bottom: 14px;
+  padding: 15px 45px 14px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -12,4 +10,23 @@
   border: 2px solid #2aab6d;
   border-radius: 4px;
   cursor: pointer;
+
+  &--ok {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+
+  &--close {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .submit-button {
+    &--submit {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  }
 }

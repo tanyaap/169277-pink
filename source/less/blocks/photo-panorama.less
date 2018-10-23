@@ -7,7 +7,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .photo-panorama__ribbon {
@@ -26,11 +27,15 @@
 .photo-panorama__list {
   display: flex;
   flex-direction: column;
-  padding-left: 17px;
+  padding: 18px 12px 22px 17px;
   background-color: @main-light;
 }
 
 @media (min-width: @tablet-width) {
+  .photo-panorama__relative {
+    width: 700px;
+  }
+
   .photo-panorama {
     display: flex;
     flex-direction: column;
@@ -40,6 +45,7 @@
 
   .photo-panorama__ribbon {
     top: 57px;
+    right: 20px;
   }
 
   .photo-panorama__list {
@@ -47,13 +53,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 620px;
-    padding-top: 26px;
-    padding-bottom: 27px;
+    padding: 25px 12px 15px 27px;
     box-sizing: border-box;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .photo-panorama__relative {
+    width: 1200px;
+  }
+
   .photo-panorama__ribbon {
     top: 54px;
     right: 130px;
