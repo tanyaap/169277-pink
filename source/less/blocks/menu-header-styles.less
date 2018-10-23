@@ -11,13 +11,6 @@
   margin-bottom: 25px;
 }
 
-.menu-header-styles__logo-pic {
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-}
-
 .menu-header-styles__button {
   width: 24px;
   height: 23px;
@@ -32,26 +25,11 @@
     margin-top: 27px;
     margin-bottom: 42px;
   }
-
-  .menu-header-styles__logo-pic {
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
   .menu-header-styles__logo-pic {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-      margin-right: 173px;
-    }
+    margin-right: 173px;
   }
 
   .menu-header-styles__button {

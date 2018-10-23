@@ -12,9 +12,11 @@
         <div class="main-menu__block wrapper wrapper--nopadding">
           <div class="main-menu__menu-header menu-header-styles">
             <a class="menu-header-styles__logo" href="index.html" title="PINK">
-              <img class="menu-header-styles__logo-pic" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-              <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="PINK">
-              <img class="menu-header-styles__logo-pic menu-header-styles__logo-pic--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="PINK">
+              <picture class="menu-header-styles__logo-pic">
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="PINK">
+              </picture>
             </a>
             <button class="menu-header-styles__button">
               <span class="visually-hidden">Закрыть</span>
@@ -169,8 +171,10 @@
     <footer class="page-footer page-footer--form">
       <div class="page-footer__block wrapper">
         <a class="page-footer__logo" href="index.html" title="PINK">
-          <img class="page-footer__logo-pic" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
-          <img class="page-footer__logo-pic page-footer__logo-pic--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="PINK">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="PINK">
+          </picture>
         </a>
 
         <div class="page-footer__social social">
