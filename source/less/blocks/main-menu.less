@@ -1,27 +1,84 @@
+.main-menu__menu-header {
+  position: relative;
+}
+
 .main-menu {
   margin-bottom: -70px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.78;
-  text-align: center;
   text-transform: uppercase;
   color: @white;
   background-color: @main-dark;
   z-index: 1;
 
   &--opened .menu-header-styles__button {
-    background: @main-dark url("../img/icon-menu-cross.svg") no-repeat;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 48%;
+      right: -2px;
+      transform: translateY(-48%);
+      width: 28px;
+      height: 4px;
+      background-color: @white;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: @main-pink;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: @main-pink;
+      opacity: 0.3;
+    }
   }
 
   &--closed .menu-header-styles__button {
     width: 50px;
     height: 24px;
-    background: rgba(29, 39, 50, 0.7) url("../img/icon-menu-burger.svg") no-repeat;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 5px;
+      background-color: @white;
+      box-shadow: 0 -10px 0 0 @white, 0 10px 0 0 @white;
+    }
+
+    &:hover::before {
+      background-color: @main-pink;
+      box-shadow: 0 -10px 0 0 @main-pink, 0 10px 0 0 @main-pink;
+    }
+
+    &:active::before {
+      background-color: @main-pink;
+      box-shadow: 0 -10px 0 0 @main-pink, 0 10px 0 0 @main-pink;
+      opacity: 0.3;
+    }
   }
 }
 
 .main-menu__list {
   .list-reset();
+  text-align: center;
 }
 
 @media (max-width: @uptodesktop-width-only) {
