@@ -23,9 +23,9 @@
 
 .photo-uploader__edit {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 39px;
+  margin-bottom: 18px;
 }
 
 .photo-uploader__edit input {
@@ -35,10 +35,6 @@
 .photo-uploader__toggle {
   margin-right: 34px;
   border: none;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &--crop svg {
     width: 44px;
@@ -50,42 +46,18 @@
     height: 43px;
   }
 
-  &--contrast svg {
-    width: 32px;
-    height: 32px;
-  }
-}
+  &--contrast {
+    margin-right: 0;
 
-.photo-uploader__bar {
-  &--scale {
-    position: relative;
-    width: 240px;
-    height: 2px;
-    background-color: @black;
-  }
-
-  &--switch {
-    position: absolute;
-    top: -8px;
-    width: 15px;
-    height: 15px;
-    background-color: @main-light;
-    border: 2px solid @main-pink;
-    border-radius: 50%;
-    cursor: pointer;
-
-    &:active {
-      background-color: @main-pink;
+    svg {
+      width: 32px;
+      height: 32px;
     }
-  }
-
-  &:not(.photo-uploader__bar--active) {
-    display: none;
   }
 }
 
 .photo-uploader__controls {
-  margin-bottom: 73px;
+  margin-bottom: 48px;
 }
 
 .photo-uploader__buttons {
@@ -145,12 +117,36 @@
       fill: @main-dark;
     }
   }
+
+  .photo-uploader__range {
+    &:not(.photo-uploader__range--active) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: @uptodesktop-width-only) {
+  .photo-uploader__toggle {
+    &--crop svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill svg {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .photo-uploader__block {
     flex-direction: row;
-    justify-content: center;
   }
 
   .photo-uploader__photo {
@@ -162,13 +158,23 @@
   }
 
   .photo-uploader__manager {
-    flex-direction: row;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  .photo-uploader__edit-block {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 97px;
   }
 
   .photo-uploader__edit {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .photo-uploader__controls {
@@ -179,43 +185,15 @@
   }
 
   .photo-uploader__toggle {
-    margin-right: 20px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin: 0 20px 44px 7px;
 
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-right: 30px;
+    &--contrast {
       margin-bottom: 0;
     }
   }
 
-  .photo-uploader__bar {
-    height: 72px;
-    padding-top: 34px;
-    padding-bottom: 34px;
-    box-sizing: border-box;
-
-    &:first-child {
-      padding-top: 14px;
-      padding-bottom: 0;
-    }
-
-    &:last-child {
-      padding-top: 44px;
-      padding-bottom: 0;
-    }
-
-    &--scale {
-      width: 202px;
-    }
-
-    &:not(.photo-uploader__bar--active) {
-      display: block;
-    }
+  .photo-uploader__buttons {
+    margin-bottom: 0;
   }
 
   .photo-uploader__send {
@@ -224,25 +202,37 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photo-uploader {
-    background-color: transparent;
+  .photo-uploader__block {
+    align-items: flex-start;
+    padding: 0;
+    background-color: @main-light;
   }
 
-  .photo-uploader__block {
-    background-color: @main-light;
+  .photo-uploader {
+    background-color: transparent;
   }
 
   .photo-uploader__photo {
     margin-left: 80px;
     margin-right: 90px;
     margin-bottom: 0;
-    padding-top: 57px;
-    padding-bottom: 54px;
+    padding-bottom: 57px;
   }
 
-  .photo-uploader__bar {
-    &--scale {
-      width: 288px;
+  .photo-uploader__manager {
+    align-items: flex-start;
+    padding-top: 47px;
+  }
+
+  .photo-uploader__edit-block {
+    margin-bottom: 168px;
+  }
+
+  .photo-uploader__toggle {
+    margin: 6px 40px 24px -3px;
+
+    &--contrast {
+      margin-bottom: 0;
     }
   }
 
@@ -250,7 +240,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
   }
 
   .photo-uploader__send {

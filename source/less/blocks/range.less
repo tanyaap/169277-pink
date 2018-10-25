@@ -1,0 +1,99 @@
+.range {
+  width: 240px;
+  padding: 10px 5px;
+  background-color: transparent;
+  appearance: none;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:focus::-webkit-slider-thumb {
+    background-color: @main-pink;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background-color: @main-dark;
+  }
+
+  &:focus::-moz-range-thumb {
+    background-color: @main-pink;
+  }
+
+  &:focus::-ms-thumb {
+    background-color: @main-pink;
+  }
+}
+
+.range::-webkit-slider-runnable-track {
+  height: 2px;
+  margin: 14px 0;
+  cursor: pointer;
+  background-color: @main-dark;
+}
+
+.range::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+  background-color: @main-light;
+  border: 2px solid @main-pink;
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+  margin-top: -7px;
+  box-sizing: border-box;
+}
+
+.range::-moz-range-track {
+  height: 2px;
+  cursor: pointer;
+  background-color: @main-dark;
+}
+
+.range::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  background-color: @main-light;
+  border: 2px solid @main-pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range::-ms-track {
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-width: 14px 0;
+  border-color: transparent;
+  color: transparent;
+}
+
+.range::-ms-fill-lower {
+  background-color: @main-dark;
+}
+
+.range::-ms-fill-upper {
+  background-color: @main-dark;
+}
+
+.range::-ms-thumb {
+  height: 14px;
+  width: 14px;
+  margin-top: auto;
+  background-color: @main-light;
+  border: 2px solid @main-pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .range {
+    width: 202px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range {
+    width: 288px;
+  }
+}
