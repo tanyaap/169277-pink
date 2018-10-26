@@ -31,6 +31,10 @@
   background-color: @main-light;
 }
 
+.photo-panorama__photo img {
+  width: 320px;
+}
+
 @media (min-width: @tablet-width) {
   .photo-panorama__relative {
     width: 700px;
@@ -56,6 +60,10 @@
     padding: 25px 12px 15px 27px;
     box-sizing: border-box;
   }
+
+  .photo-panorama__photo img {
+    width: 700px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -70,5 +78,9 @@
 
   .photo-panorama__list {
     width: 940px;
+  }
+
+  .photo-panorama__photo img {
+    width: 1200px;
   }
 }

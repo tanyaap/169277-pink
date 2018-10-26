@@ -17,9 +17,26 @@
   vertical-align: middle;
 }
 
+.copyright__link svg {
+  width: 27px;
+  height: 34px;
+
+  &:hover {
+    fill: @main-dark;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .copyright {
     padding-bottom: 0;
+  }
+
+  .copyright__link {
+    margin-left: 10px;
   }
 }
 

@@ -16,7 +16,7 @@
   }
 
   &:active {
-    color: @black;
+    color: @main-pink;
     opacity: 0.3;
   }
 }
@@ -24,5 +24,11 @@
 @media (min-width: @desktop-width) {
   .site-list__item {
     box-shadow: none;
+  }
+
+  .site-list__link {
+    &:active {
+      color: @white;
+    }
   }
 }

@@ -7,18 +7,8 @@
   }
 }
 
-.posts-list__panorama {
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
-}
-
-.posts-list__photo {
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
+.posts-list__photo img {
+  width: 280px;
 }
 
 .posts-list__info {
@@ -63,21 +53,13 @@
   text-transform: uppercase;
   color: @main-pink;
   background: url("../img/icon-heart.svg") no-repeat 0 50%;
+}
 
-  &--likes-number {
-    padding-left: 0;
-  }
+.posts-list--likes-number {
+  padding-left: 0;
 }
 
 @media (min-width: @tablet-width) {
-  .posts-list__panorama {
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
-  }
-
   .posts-list__item {
     display: flex;
     flex-direction: column;
@@ -89,12 +71,8 @@
     }
   }
 
-  .posts-list__photo {
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
+  .posts-list__photo img {
+    width: 300px;
   }
 
   .posts-list__info {
@@ -125,28 +103,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .posts-list__panorama {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-  }
-
-  .posts-list__photo {
-    display: none;
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
-  }
-
   .posts-list__item {
     margin-bottom: 54px;
 

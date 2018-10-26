@@ -11,6 +11,20 @@
   margin-bottom: 25px;
 }
 
+.menu-header-styles__logo svg {
+  width: 74px;
+  height: 23px;
+
+  &:hover path {
+    fill: @main-pink;
+  }
+
+  &:active path {
+    fill: @white;
+    opacity: 0.3;
+  }
+}
+
 .menu-header-styles__logo-pic {
   &--tablet,
   &--desktop {
@@ -22,6 +36,7 @@
   width: 24px;
   height: 23px;
   padding: 0;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
@@ -31,6 +46,11 @@
     height: 40px;
     margin-top: 27px;
     margin-bottom: 42px;
+  }
+
+  .menu-header-styles__logo svg {
+    width: 147px;
+    height: 40px;
   }
 
   .menu-header-styles__logo-pic {
@@ -50,7 +70,6 @@
 
     &--desktop {
       display: block;
-      margin-right: 173px;
     }
   }
 
