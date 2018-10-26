@@ -19,6 +19,10 @@
   left: 50%;
 }
 
+.prices__list td {
+  background-color: @white;
+}
+
 .prices__tariff {
   position: relative;
   min-width: 276px;
@@ -84,7 +88,7 @@
 
   &--smiles {
     &:nth-child(2) {
-      background: url("../img/icon-no.svg") no-repeat 90% 50%;
+      background: @white url("../img/icon-no.svg") no-repeat 90% 50%;
     }
   }
 
@@ -92,7 +96,7 @@
     background: url("../img/icon-no.svg") no-repeat 90% 50%;
 
     &:last-child {
-      background: url("../img/icon-yes.svg") no-repeat 90% 50%;
+      background: @white url("../img/icon-yes.svg") no-repeat 90% 50%;
     }
   }
 }
