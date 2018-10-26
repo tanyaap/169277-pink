@@ -21,19 +21,19 @@
   align-items: center;
 }
 
-.photo-uploader__edit {
+.photo-uploader__edit-block {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 18px;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 
-.photo-uploader__edit input {
+.photo__uploader-radioinput {
   display: none;
 }
 
 .photo-uploader__toggle {
-  margin-right: 34px;
+  margin-left: 10px;
+  margin-right: 25px;
   border: none;
 
   &--crop svg {
@@ -47,17 +47,11 @@
   }
 
   &--contrast {
-    margin-right: 0;
-
     svg {
       width: 32px;
       height: 32px;
     }
   }
-}
-
-.photo-uploader__controls {
-  margin-bottom: 48px;
 }
 
 .photo-uploader__buttons {
@@ -103,7 +97,7 @@
     cursor: pointer;
   }
 
-  .photo-uploader__edit input {
+  .photo-uploader__range .photo__uploader-radioinput {
     &:not(:checked) + .photo-uploader__toggle svg {
       fill: @main-dark;
       opacity: 0.3;
@@ -118,10 +112,25 @@
     }
   }
 
-  .photo-uploader__range {
-    &:not(.photo-uploader__range--active) {
+  .photo__uploader-bar {
+    position: absolute;
+    top: 70%;
+    right: 50%;
+    transform: translateX(50%);
+
+    &:not(.photo__uploader-bar--active) {
       display: none;
     }
+  }
+
+  .photo-uploader__edit-block {
+    position: relative;
+    height: 85px;
+  }
+
+  .photo-uploader__buttons {
+    padding-top: 38px;
+    border-top: 1px solid rgba(40, 54, 69, 0.1);
   }
 }
 
@@ -158,38 +167,23 @@
   }
 
   .photo-uploader__manager {
-    padding-top: 57px;
-    padding-bottom: 54px;
+    justify-content: space-between;
   }
 
   .photo-uploader__edit-block {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 97px;
+    margin-bottom: 75px;
   }
 
-  .photo-uploader__edit {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 0;
-  }
-
-  .photo-uploader__controls {
+  .photo-uploader__range {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 0;
-  }
-
-  .photo-uploader__toggle {
-    margin: 0 20px 44px 7px;
-
-    &--contrast {
-      margin-bottom: 0;
-    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
   .photo-uploader__buttons {
@@ -220,16 +214,15 @@
   }
 
   .photo-uploader__manager {
-    align-items: flex-start;
-    padding-top: 47px;
+    padding-top: 40px;
   }
 
   .photo-uploader__edit-block {
-    margin-bottom: 168px;
+    margin-bottom: 150px;
   }
 
   .photo-uploader__toggle {
-    margin: 6px 40px 24px -3px;
+    margin: 6px 40px 24px -20px;
 
     &--contrast {
       margin-bottom: 0;

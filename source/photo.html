@@ -110,7 +110,7 @@
 
     <main class="main-content">
       <div class="wrapper">
-        <p class="main-content__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="main-content__description main-content__description--photo">Взгляните на фотографии, которые выкладывают пользователи!<span class="main-content__description main-content__description--photo-span"> Видите, как не хватает ваших?</span></p>
       </div>
 
       <section class="photo-panorama">
@@ -255,7 +255,8 @@
       </section>
 
       <div class="wrapper">
-        <p class="main-content__description main-content__description--bottom">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="main-content__description main-content__description--photo-bottom">Затмите их всех!</p>
+        <p class="main-content__description main-content__description--photo-bottom">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
 
       <section class="photo-uploader">
@@ -268,40 +269,48 @@
           </picture>
           <div class="photo-uploader__manager">
             <div class="photo-uploader__edit-block">
-              <div class="photo-uploader__edit">
-                <input type="radio" name="edit-field" value="prices" id="edit1" checked>
-                <label for="edit1" class="photo-uploader__toggle photo-uploader__toggle--crop">
-                  <svg width="44" height="44" fill="#d22856">
-                    <use xlink:href="#uploader-1"></use>
-                  </svg>
-                  <span class="visually-hidden">Обрезать</span>
-                </label>
-                <input type="radio" name="edit-field" value="prices" id="edit2">
-                <label for="edit2" class="photo-uploader__toggle photo-uploader__toggle--fill">
-                  <svg width="48" height="43" fill="#d22856">
-                    <use xlink:href="#uploader-2"></use>
-                  </svg>
-                  <span class="visually-hidden">Изменить цвет</span>
-                </label>
-                <input type="radio" name="edit-field" value="prices" id="edit3">
-                <label for="edit3" class="photo-uploader__toggle photo-uploader__toggle--contrast">
-                  <svg width="32" height="32" fill="#d22856">
-                    <use xlink:href="#uploader-3"></use>
-                  </svg>
-                  <span class="visually-hidden">Изменить яркость</span>
-                </label>
-              </div>
-              <div class="photo-uploader__controls">
-                <div class="photo-uploader__range photo-uploader__range--active">
-                  <input class="range" type="range" value="75" min="0" max="100" id="range1">
+              <div class="photo-uploader__range">
+                <div class="photo__uploader-radio">
+                  <input class="photo__uploader-radioinput" type="radio" name="edit-field" value="prices" id="edit1" checked>
+                  <label for="edit1" class="photo-uploader__toggle photo-uploader__toggle--crop">
+                    <svg width="44" height="44" fill="#d22856">
+                      <use xlink:href="#uploader-1"></use>
+                    </svg>
+                    <span class="visually-hidden">Обрезать</span>
+                  </label>
+                </div>
+                <div class="photo__uploader-bar photo__uploader-bar--active">
+                  <input class="range" type="range" value="85" min="0" max="100" id="range1">
                   <label for="range1"></label>
                 </div>
-                <div class="photo-uploader__range">
-                  <input class="range" type="range" value="15" min="0" max="100" id="range2">
+              </div>
+              <div class="photo-uploader__range">
+                <div class="photo__uploader-radio">
+                  <input class="photo__uploader-radioinput" type="radio" name="edit-field" value="prices" id="edit2">
+                  <label for="edit2" class="photo-uploader__toggle photo-uploader__toggle--fill">
+                    <svg width="48" height="43" fill="#d22856">
+                      <use xlink:href="#uploader-2"></use>
+                    </svg>
+                    <span class="visually-hidden">Изменить цвет</span>
+                  </label>
+                </div>
+                <div class="photo__uploader-bar">
+                  <input class="range" type="range" value="20" min="0" max="100" id="range2">
                   <label for="range2"></label>
                 </div>
-                <div class="photo-uploader__range">
-                  <input class="range" type="range" value="25" min="0" max="100" id="range3">
+              </div>
+              <div class="photo-uploader__range">
+                <div class="photo__uploader-radio">
+                  <input class="photo__uploader-radioinput" type="radio" name="edit-field" value="prices" id="edit3">
+                  <label for="edit3" class="photo-uploader__toggle photo-uploader__toggle--contrast">
+                    <svg width="32" height="32" fill="#d22856">
+                      <use xlink:href="#uploader-3"></use>
+                    </svg>
+                    <span class="visually-hidden">Изменить яркость</span>
+                  </label>
+                </div>
+                <div class="photo__uploader-bar">
+                  <input class="range" type="range" value="55" min="0" max="100" id="range3">
                   <label for="range3"></label>
                 </div>
               </div>
@@ -361,7 +370,7 @@
         </a>
 
         <div class="page-footer__social social">
-          <ul class="social__list">
+          <ul class="social__list social__list--photo">
             <li class="social__item">
               <a class="social__link social__link--tw" href="#" title="Твиттер">
                 <span class="visually-hidden">Твиттер</span>

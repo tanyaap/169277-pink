@@ -63,6 +63,10 @@
     justify-content: space-between;
   }
 
+  .page-footer__logo-link {
+    align-self: flex-start;
+  }
+
   .page-footer__logo-link svg {
     margin-bottom: 0;
   }
@@ -73,14 +77,38 @@
     &--index {
       padding-top: 65px;
       padding-bottom: 110px;
+
+      .page-footer__block {
+        align-items: flex-end;
+      }
+
+      .page-footer__logo-link {
+        margin-top: 5px;
+      }
     }
 
     &--photo {
       padding-top: 98px;
+
+      .page-footer__block {
+        justify-content: flex-start;
+      }
+
+      .page-footer__logo-link {
+        margin-right: 240px;
+      }
     }
 
     &--form {
       padding-top: 67px;
+
+      .page-footer__block {
+        justify-content: flex-start;
+      }
+
+      .page-footer__logo-link {
+        margin-right: 240px;
+      }
     }
   }
 

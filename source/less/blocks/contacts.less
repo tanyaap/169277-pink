@@ -14,10 +14,10 @@
     content: "";
     display: block;
     width: 100%;
-    height: 65px;
+    height: 70px;
     margin: 0 auto;
     background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 100%;
-    background-size: 100% 100%;outline: 1px solid tomato;
+    background-size: 100% 100%;
   }
 }
 
@@ -54,7 +54,7 @@
 
   &--link {
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     text-decoration: none;
   }
 
@@ -82,10 +82,9 @@
 }
 
 .contacts__map-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
   height: 100%;
+  margin: 0 auto;
   overflow: hidden;
 
   &--picture {
@@ -96,10 +95,9 @@
 .contacts__map {
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
-  margin-top: -67%;
+  height: 350px;
+  margin-top: -20%;
   border: none;
-  z-index: -1;
 
   &--picture {
     display: none;
@@ -111,7 +109,7 @@
 @media (min-width: @tablet-width) {
   .contacts__block {
     &::after {
-      height: 195px;
+      height: 95px;
     }
   }
 
@@ -137,6 +135,7 @@
 
   .contacts__types {
     &--call {
+      margin-left: 20px;
       margin-right: 101px;
     }
 
@@ -150,6 +149,12 @@
     }
   }
 
+  .contacts__details {
+    &--link {
+      margin-bottom: 24px;
+    }
+  }
+
   .contacts__map-block {
     &--picture {
       background-position: 50% 69%;
@@ -157,7 +162,8 @@
   }
 
   .contacts__map {
-    margin-top: -7%;
+    height: 525px;
+    margin-top: -15%;
 
     &--picture {
       width: 700px;
@@ -169,7 +175,7 @@
 @media (min-width: @desktop-width) {
   .contacts__block {
     &::after {
-      height: 355px;
+      height: 125px;
     }
   }
 
@@ -187,15 +193,12 @@
 
   .contacts__contacts-info {
     flex-wrap: nowrap;
-    justify-content: space-between;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    justify-content: space-around;
   }
 
   .contacts__types {
     &--call {
+      margin-left: 0;
       margin-right: 0;
     }
 
@@ -225,8 +228,7 @@
   }
 
   .contacts__map {
-    width: 1200px;
-    margin-top: 9%;
+    height: 705px;
 
     &--picture {
       width: 1200px;
