@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
@@ -12,11 +12,9 @@
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
-    <svg display="none">
-      <symbol id="logo-academy" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
-      </symbol>
-    </svg>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header">
       <nav class="main-menu main-menu--closed main-menu--nojs">
@@ -94,6 +92,10 @@
       <div class="page-header__picture">
         <div class="wrapper">
           <picture class="page-header__picture-pic">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+
             <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
             <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="">
@@ -135,23 +137,35 @@
         <div class="advantages__block wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="">
+              </picture>
               <h2 class="advantages__title">Поднимает настроение</h2>
               <p class="advantages__description">Приложение позволить вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="">
+              </picture>
               <h2 class="advantages__title">Меняет мир вокруг</h2>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="">
+              <picture>
+                <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                <img class="advantages__picture advantages__picture--desktop" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="">
+              </picture>
               <h2 class="advantages__title">Заводит новых друзей</h2>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <div class="advantages__picture-block">
             <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="">
             </picture>
@@ -224,7 +238,7 @@
             <h2 class="visually-hidden">Расценки</h2>
             <table class="prices__list">
               <tr>
-                <th class="prices__hidden"></th>
+                <th></th>
                 <th class="prices__tariff">
                   <span class="prices__tariff-type">База</span>
                   <span class="prices__tariff-price">1,99 USD</span>
@@ -330,6 +344,10 @@
         </div>
         <div class="contacts__map-block contacts__map-block--picture">
           <picture class="contacts__map contacts__map--picture">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
             <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
             <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
@@ -407,7 +425,7 @@
           <p class="copyright__text">Разработано
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
               <svg width="27" height="34" fill="#d22856">
-                <use xlink:href="#logo-academy"></use>
+                <use xlink:href="#logo-htmlacademy"></use>
               </svg>
             </a>
           </p>
